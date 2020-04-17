@@ -11,15 +11,16 @@ const Column = styled.div`
     border-radius: 3px;
     margin: 5px;
     padding: 5px;
-    width: 45%;
+    width: 95%;
     background: teal;
     color: black;
     border: 2px solid black;
 `
-const Element = styled.div`
+const Element = styled.button`
     border-radius: 3px;
     margin: 5px;
     padding: 5px;
+    width: 95%;
     background: black;
     color: white;
     border: 2px solid black;
@@ -30,128 +31,26 @@ const ListItem = styled.li`
 
 function App() {
 var users = [{'username':'steve'}]
-var title = ['title0','title1','title2','title3','title4','title5','title6','title7','title8','title9',]
+var list = ['item0','item1','item2','item3','item4','item5','item6','item7','item8',]
+var titles = ['title0','title1','title2','title3','title4','title5','title6','title7','title8','title9',]
 var details = ['detail1', 'detail2','detail3']
 var subTitles = ['sub1','sub2']
-var dataBase = {
-    title,
-    details,
-    subTitles,
+
+const handleClick = ()=>{
+console.log('yo')
 }
- console.log(dataBase)
+
   return (
 
     <div className="App">
         <UserName>{users[0].username}</UserName>
         <Column>
-            <Element>
-                {title[0]}-{details.map(detail=> <>-{detail}</>  )}
+            {list.map((item,i) => (
+                <Element key={i} onClick={handleClick}>
+                    {item}
+                </Element>
+            ))}
 
-                {subTitles.map(sub=>(
-                    <ListItem>{sub}-
-                        {details.map(detail=><>-{detail}</>)}
-                    </ListItem>
-                ))}
-            </Element>
-            <Element>
-                {title[1]}-{details.map(detail=> <>-{detail}</>  )}
-
-                {subTitles.map(sub=>(
-                    <ListItem>{sub}-
-                        {details.map(detail=><>-{detail}</>)}
-                    </ListItem>
-                ))}
-            </Element>
-        </Column>
-        <Column>
-            <Element>
-                {title[2]}-{details.map(detail=> <>-{detail}</>  )}
-
-                {subTitles.map(sub=>(
-                    <ListItem>{sub}-
-                        {details.map(detail=><>-{detail}</>)}
-                    </ListItem>
-                ))}
-            </Element>
-
-
-
-        </Column>
-
-        <Column>
-            <Element>
-                {title[3]}-{details.map(detail=> <>-{detail}</>  )}
-
-                {subTitles.map(sub=>(
-                    <ListItem>{sub}-
-                        {details.map(detail=><>-{detail}</>)}
-                    </ListItem>
-                ))}
-            </Element>
-            <Element>
-                {title[4]}-{details.map(detail=> <>-{detail}</>  )}
-
-                {subTitles.map(sub=>(
-                    <ListItem>{sub}-
-                        {details.map(detail=><>-{detail}</>)}
-                    </ListItem>
-                ))}
-            </Element>
-        </Column>
-<Column>
-            <Element>
-                {title[5]}-{details.map(detail=> <>-{detail}</>  )}
-
-                {subTitles.map(sub=>(
-                    <ListItem>{sub}-
-                        {details.map(detail=><>-{detail}</>)}
-                    </ListItem>
-                ))}
-            </Element>
-            <Element>
-                {title[6]}-{details.map(detail=> <>-{detail}</>  )}
-
-                {subTitles.map(sub=>(
-                    <ListItem>{sub}-
-                        {details.map(detail=><>-{detail}</>)}
-                    </ListItem>
-                ))}
-            </Element>
-        </Column>
-        <Column>
-            <Element>
-                {title[7]}-{details.map(detail=> <>-{detail}</>  )}
-
-                {subTitles.map(sub=>(
-                    <ListItem>{sub}-
-                        {details.map(detail=><>-{detail}</>)}
-                    </ListItem>
-                ))}
-            </Element>
-
-
-
-        </Column>
-
-        <Column>
-            <Element>
-                {title[8]}-{details.map(detail=> <>-{detail}</>  )}
-
-                {subTitles.map(sub=>(
-                    <ListItem>{sub}-
-                        {details.map(detail=><>-{detail}</>)}
-                    </ListItem>
-                ))}
-            </Element>
-            <Element>
-                {title[9]}-{details.map(detail=> <>-{detail}</>  )}
-
-                {subTitles.map(sub=>(
-                    <ListItem>{sub}-
-                        {details.map(detail=><>-{detail}</>)}
-                    </ListItem>
-                ))}
-            </Element>
         </Column>
     </div>
   );
