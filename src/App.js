@@ -8,14 +8,22 @@ class App extends Component {
     inputValue:''
   };
 
+//add item
   handleAddItem = () => {
-
     let list = this.state.list
     list.push(this.state.inputValue)
-
     this.setState({list: list})
     this.setState({inputValue: ''})
   };
+//remove item
+  handleRemoveItem = () => {
+    let list = this.state.list
+    list.pop(this.state.inputValue)
+    this.setState({list: list})
+    this.setState({inputValue: ''})
+  };
+
+//handle input value
   handleChange=(e)=>{
     let currentInputValue=e.target.value
     this.setState({inputValue: currentInputValue})
@@ -31,13 +39,15 @@ class App extends Component {
             )}
         </div>
         <div className="add-item">
+        <button className="button" onClick={this.handleRemoveItem}>remove</button>
           <input
           className="input-field"
           placeholder="type here"
           onChange={this.handleChange}
           value={this.state.inputValue}
           ></input>
-          <button className="button" onClick={this.handleAddItem}></button>
+          <button className="button" onClick={this.handleAddItem}>add</button>
+
         </div>
       </div>
     );
