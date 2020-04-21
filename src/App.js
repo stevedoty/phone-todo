@@ -28,32 +28,41 @@ class App extends Component {
 //===========================================
 //handle input value
   handleChange=(e)=>{
-    let currentInputValue=e.target.value
+    let currentInputValue = e.target.value;
     this.setState({inputValue: currentInputValue})
   }
 //====================
 //add item
   handleAddItem = () => {
-    let list = this.state.list
-    list.push(this.state.inputValue)
-    this.setState({list: list})
-    this.setState({inputValue: ''})
+    //create clone of sublist array
+    let newSublist = this.state.page1.list.sublist
+    //create object
+    let newSublistItemObject = {
+        title: this.state.inputValue,
+        details: []
+    }
+    //push object to clone
+    newSublist.push(newSublistItemObject)
+    //update state
+    this.setState({sublist: newSublist, inputValue: ''})
+
   };
 //====================
 //remove item
   handleRemoveItem = (e) => {
-    let list = this.state.list
-    //identified index of item selected
+    let newSublist = this.state.page1.list.sublist
+    //identified content of item selected
     let selected = e.target.parentNode.childNodes[1].textContent
+    //identify item index by content
     function selectedItem(item, index){
-        return item == selected
+        return item.title == selected
     }
-    let index = list.findIndex(selectedItem)
+    let index = newSublist.findIndex(selectedItem)
     //remove item selected from list
         //modify list
-        list.splice(index,1)
+        newSublist.splice(index,1)
         //update this.state.list
-        this.setState({list:list})
+        this.setState({sublist:newSublist})
   };
 //====================
 //move item
@@ -69,20 +78,7 @@ class App extends Component {
 //mark as item as completed
   handleCompleted = (e) => {
   //copy item, remove from List, add to completedList
-    //create list clone
-    let list = this.state.list
-    //id selected
-    let selected = e.target.parentNode.childNodes[1].textContent
-    function selectedItem(item, index){
-        return item == selected
     }
-    let index = list.findIndex(selectedItem)
-    //strikethrough selected
-    //striked items always last
-    //update list
-    //this.setState({list:list})
-    }
-    //onClick
 //====================
 //mark as item as incomplete
   handleInComplete = (e) => {
@@ -106,11 +102,10 @@ class App extends Component {
 //===========================================
 //===========================================
   render() {
-  console.log(this.state.page1.list.details[0])
     return (
       <div className="App">
         <div className="list">
-            <div className='list-title'>{this.state.page1.list.title} \\ {this.state.page1.list.details.map( (detail, i) => detail)}
+            <div className='list-title'>{this.state.page1.list.title} \{this.state.page1.list.details.map( (detail, i) => <>\ {detail} </>)}
             </div>
             {this.state.page1.list.sublist.map((subitem,i)=>(
             <div key={i} className='item'>
