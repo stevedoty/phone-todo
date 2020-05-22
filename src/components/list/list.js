@@ -2,17 +2,19 @@ import React from 'react';
 import ListItem from '../list-item/list-item.js'
 import Masonry from 'react-masonry-component'
 
-let List = props => {
+class List extends React.Component{
+render(){
     return <div>
-                <Masonry className="list">
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
+                <Masonry className="list" elementType={'ul'}>
+                    <ListItem/>
+                    <ListItem/>
+                    <ListItem/>
+                    <ListItem/>
+                    <ListItem/>
+                    <ListItem/>
                 </Masonry>
            </div>
+}
 }
 
 

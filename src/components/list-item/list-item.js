@@ -1,17 +1,16 @@
 import React from 'react';
-import Masonry from 'react-masonry-component'
 
 let ListItem = props => {
-    return <div>
-                <Masonry>
-                    <div className="list-item">
-                        <div>title</div>
-                        <div>detail</div>
-                        <div>subtitle</div>
-                        <div>subdetail</div>
-                    </div>
-                </Masonry>
-           </div>
+
+    return (
+        <div className="list-item shown">
+              <div>{'title'}  {'detail'}{'detail'}{'detail'}</div>
+              <div>{'subtitle'} {'subdetail'}{'subdetail'}{'subdetail'}</div>
+              <div>{'subtitle'} {'subdetail'}</div>
+              <div>{'subtitle'} {'subdetail'}{'subdetail'}</div>
+              <div>{'subtitle'} {'subdetail'}{'subdetail'}{'subdetail'}</div>
+        </div>
+    )
 }
 
 

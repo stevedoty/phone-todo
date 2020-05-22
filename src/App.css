@@ -11,18 +11,12 @@
 }
 .list{
     margin:2%;
+    padding:2%;
     border: 1px solid blue;
 }
-.item{
-    height:70px;
-    width:25%;
-    margin:2%;
-    padding:5%;
-    border: 1px solid red;
-}
 .list-item{
-    margin:2%;
-    border: 1px solid black;
+    margin: 2%;
+    border: 1px solid red;
 }
 .add-item{
     border: 1px solid black;
