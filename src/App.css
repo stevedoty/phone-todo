@@ -1,6 +1,31 @@
 .App {
   text-align: center;
-
+    height:100%;
+    width:100%;
+    align-items: center;
+}
+.page{
+    text-align: left;
+    margin:2%;
+    padding:2%;
+}
+.list{
+    margin:2%;
+    border: 1px solid blue;
+}
+.item{
+    height:70px;
+    width:25%;
+    margin:2%;
+    padding:5%;
+    border: 1px solid red;
+}
+.list-item{
+    margin:2%;
+    border: 1px solid black;
+}
+.add-item{
+    border: 1px solid black;
 }
 
 
