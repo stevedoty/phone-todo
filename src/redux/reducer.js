@@ -1,23 +1,96 @@
 import ActionTypes from './actions.js';
 //import './action-creator.js';
 
+//map page
+//map list
+//map sublist
 const INITIAL_STATE = {
-    page1: {
-      list: {
-        title: "this is my list title",
+    page1: [
+      {
+        title: "title1",
         details: ["1st", "2nd", "3rd"],
         sublist: [
           {
-            title: "this is my 1st sublist title",
+            title: "subtitle1",
             details: ["1st", "2nd", "3rd"],
           },
           {
-            title: "this is my 2nd sublist title",
+            title: "subtitle2",
             details: ["1st", "2nd", "3rd"],
           },
         ],
       },
-    },
+      {
+          title: "title1",
+          details: ["1st", "2nd", "3rd"],
+          sublist: [
+            {
+              title: "subtitle1",
+              details: ["1st", "2nd", "3rd"],
+            },
+            {
+              title: "subtitle2",
+              details: ["1st", "2nd", "3rd"],
+            },
+          ],
+        },
+      {
+        title: "title1",
+        details: ["1st", "2nd", "3rd"],
+        sublist: [
+          {
+            title: "subtitle1",
+            details: ["1st", "2nd", "3rd"],
+          },
+          {
+            title: "subtitle2",
+            details: ["1st", "2nd", "3rd"],
+          },
+        ],
+      },
+      {
+          title: "title1",
+          details: ["1st", "2nd", "3rd"],
+          sublist: [
+            {
+              title: "subtitle1",
+              details: ["1st", "2nd", "3rd"],
+            },
+            {
+              title: "subtitle2",
+              details: ["1st", "2nd", "3rd"],
+            },
+          ],
+        },
+      {
+        title: "title1",
+        details: ["1st", "2nd", "3rd"],
+        sublist: [
+          {
+            title: "subtitle1",
+            details: ["1st", "2nd", "3rd"],
+          },
+          {
+            title: "subtitle2",
+            details: ["1st", "2nd", "3rd"],
+          },
+        ],
+      },
+      {
+          title: "title1",
+          details: ["1st", "2nd", "3rd"],
+          sublist: [
+            {
+              title: "subtitle1",
+              details: ["1st", "2nd", "3rd"],
+            },
+            {
+              title: "subtitle2",
+              details: ["1st", "2nd", "3rd"],
+            },
+          ],
+        },
+    ],
     completedList: ["first completed item"],
     inputTitleValue: "",
     inputDetailValue: "",

@@ -21,20 +21,6 @@ class App extends Component {
                  </div>
            <div className="page">
                 <List props={this.props}/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-
            </div>
          </div>
        );

@@ -1,4 +1,6 @@
 /*
+*********CONVERT TO NATIVE!!!!!!!!!!
+*********FINISH REDUX!!!!!!!!!!
 
 -DISPLAY LIST CONTENTS
     -TITLES -done
