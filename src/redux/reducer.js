@@ -32,6 +32,16 @@ const INITIAL_STATE = {
               title: "subtitle2",
               details: ["1st", "2nd", "3rd"],
             },
+
+            {
+              title: "subtitle2",
+              details: ["1st", "2nd", "3rd"],
+            },
+
+            {
+              title: "subtitle2",
+              details: ["1st", "2nd", "3rd"],
+            },
           ],
         },
       {
@@ -42,6 +52,11 @@ const INITIAL_STATE = {
             title: "subtitle1",
             details: ["1st", "2nd", "3rd"],
           },
+          {
+            title: "subtitle2",
+            details: ["1st", "2nd", "3rd"],
+          },
+
           {
             title: "subtitle2",
             details: ["1st", "2nd", "3rd"],

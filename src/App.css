@@ -23,3 +23,46 @@
 }
 
 
+/* ================================================ */
+.box{
+  text-align: left;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 5px;
+  padding-bottom: 5px;
+}
+.grandparent{
+  padding: 10px;
+  padding-bottom: 5px;
+}
+.parent{
+  padding: 10px;
+  margin-left: 10px;
+}
+.child{
+  padding: 10px;
+  margin-left: 10px;
+}
+.grandchild{
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.title{
+  display: block;
+  border: 1px solid red;
+  float: left;
+  padding: 5px;
+  border-left: none;
+  border-top: none;
+}
+.detail{
+  display: block;
+  border: 1px solid BLUE;
+  float: left;
+  padding: 5px;
+  margin-left: 5px;
+  border-left: none;
+  border-top: none;
+}

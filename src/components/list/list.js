@@ -9,8 +9,8 @@ const page1 = this.props.props.state.initialReducer.page1
     return <div>
                 <Masonry className="list" elementType={'ul'}>
                           {page1.map(list => <div className="list-item shown">
-                                    {list.title}_{list.details.map( detail => <>_{detail}</> )}
-                                    {list.sublist.map( subitem => <div>{subitem.title}_{subitem.details.map(detail => <>_{detail}</> )}</div> )}
+                                    {list.title}_{list.details.map( detail => <>_{detail}</> )} |:|
+                                    {list.sublist.map( subitem => <div>=>{subitem.title}_{subitem.details.map(detail => <>_{detail}</> )} |:|</div> )}
                                 </div>
                           )}
                 </Masonry>

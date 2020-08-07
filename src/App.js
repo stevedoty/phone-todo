@@ -22,6 +22,71 @@ class App extends Component {
            <div className="page">
                 <List props={this.props}/>
            </div>
+
+            <div className="box">
+                <div className="grandparent">
+                    <div className="title">GP...</div>
+                        <div className="detail">det</div>
+                        <div className="detail">det</div>
+                        <div className="detail">det</div>
+                    <br/>
+                    <br/>
+                    <div className="parent">
+                        <div className="title">P...</div>
+                            <div className="detail">det</div>
+                            <div className="detail">det</div>
+                            <div className="detail">det</div>
+                        <br/>
+                        <br/>
+                        <div className="child">
+                            <div className="title">C...</div>
+                                <div className="detail">det</div>
+                                <div className="detail">det</div>
+                                <div className="detail">det</div>
+                            <br/>
+                            <br/>
+
+                            <div className="grandchild">
+                                <div className="title">GC...</div>
+                                    <div className="detail">det</div>
+                                    <div className="detail">det</div>
+                                    <div className="detail">det</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="grandparent">
+                    <div className="title">GP...</div>
+                        <div className="detail">det</div>
+                        <div className="detail">det</div>
+                        <div className="detail">det</div>
+                    <br/>
+                    <br/>
+                    <div className="parent">
+                        <div className="title">P...</div>
+                            <div className="detail">det</div>
+                            <div className="detail">det</div>
+                            <div className="detail">det</div>
+                        <br/>
+                        <br/>
+                        <div className="child">
+                            <div className="title">C...</div>
+                                <div className="detail">det</div>
+                                <div className="detail">det</div>
+                                <div className="detail">det</div>
+                            <br/>
+                            <br/>
+                            <div className="grandchild">
+                                <div className="title">GC...</div>
+                                    <div className="detail">det</div>
+                                    <div className="detail">det</div>
+                                    <div className="detail">det</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
          </div>
        );
   }
