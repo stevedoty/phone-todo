@@ -1,5 +1,6 @@
 {
   "name": "phone-todo",
+  "homepage":"https://stevedoty.github.io/phone-todo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
