@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import {
     handleTitleInputChange,
     handleClick
@@ -8,13 +9,37 @@ import { connect } from 'react-redux';
 import List from './components/list/list.js'
 import InfoForm from './components/form/form.js'
 import AddButton from './components/add-button/add-button.js'
+
+import {Card, Breadcrumb, Modal, Button, Form} from 'react-bootstrap';
+
 import "./App.css";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
 
   render() {
    return (
          <div className="App">
+          <div style={{
+            width:"100vw-10px",
+            height:"80vh",
+            padding:"2%",
+            border:"10px solid teal",
+          }}>
+
+
+
+
+
+            new content here
+
+
+
+
+
+
+
+         </div>
                  <div className="add-item">
                      <InfoForm/>
                      <AddButton/>
